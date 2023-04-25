@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+	  
+	  <style></style>
+  </head>
+  <body>
+	  
+	<script>
+		function check()
+			{
+				document.getElementById('name').innerHTML = document.myform.name.value;
+				document.getElementById('team').innerHTML = document.myform.team.value;
+				document.getElementById('software').innerHTML = document.myform.software.value;
+				document.getElementById('role').innerHTML = document.myform.role.value;
+			}
+	</script>
+  
+<div class="row">
+	
+	<div id="petal" class="col-4">
+		
+		<form name="myform">
+	<p> Add a new petal to your flower
+	<p> Name
+		<br>
+		<input type = 'text' name= 'name' value= ''></p>
+		
+		<p>Role
+			<br>
+	<input type = 'text' name= 'role' value= ''></p>
+			
+			<p>Software
+				<br>
+	<input type = 'text' name= 'software' value= ''></p>
+				
+	
+	<p>What team are you on?
+		<br>
+	<select name="role">
+		<option value=select> Select</option>
+		<option value=product> Product</option>
+		<option value=marketing> Marketing </option>
+		<option value=HR> HR </option>
+		<option value=Finance> Finance </option>
+		<option value=Engineering> Engineering </option>
+		<option value=Other> Other </option>
+	</select>
+	</p>
+	
+	<p><input type = 'submit' onclick='check(); return false'></p>
+	</p>
+	
+</form>
+		
+	</div>
+	
+  	<div id="flower" class="col-8">
+	  <p> Your Company has _ petals</p>
+		
+		<div id='answeredpetal'>
+		<h3 id='software'></h3>
+			<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <h8>Owner</h8>
+		<h5 id="name"></h5>
+    </div>
+    <div class="col">
+      <h8>Team</h8>
+		<h5 id="team"></h5>
+    </div>
+    <div class="col">
+      <h8>Role</h8>
+		<h5 id="role"></h5>
+    </div>
+  </div>
+</div>
+			
+		</div>
+
+    </div>
+  
+</div>
+	  
+	  
+	  
+
+</body>
+</html>
